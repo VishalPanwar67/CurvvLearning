@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      .container {
+        display: grid;
+        height: 100vh;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        grid-template-areas:
+          "nav nav nav nav nav"
+          "side content1 content1 content1 content1"
+          "side content2 content2 content3 content3"
+          "footer footer footer footer footer";
+        gap: clamp(5px, 1vw, 10px);
+      }
+      .nav {
+        grid-area: nav;
+        background-color: green;
+        /* height: 10px; */
+      }
+      .side {
+        grid-area: side;
+        background-color: green;
+      }
+      .content1 {
+        grid-area: content1;
+        background-color: green;
+      }
+      .content2 {
+        grid-area: content2;
+        background-color: green;
+      }
+      .content3 {
+        grid-area: content3;
+        background-color: green;
+      }
+      .footer {
+        grid-area: footer;
+        background-color: green;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <nav class="nav">nav</nav>
+      <aside class="side">side</aside>
+      <main class="content1">content1</main>
+      <main class="content2">content2</main>
+      <main class="content3">content3</main>
+      <footer class="footer">footer</footer>
+    </div>
+  </body>
+</html>
