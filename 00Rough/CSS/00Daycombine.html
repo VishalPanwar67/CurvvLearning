@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grid + Flex Layout</title>
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      .container {
+        width: 90vw;
+        margin: 50px auto;
+        display: grid;
+        grid-template-rows: auto auto auto auto;
+      }
+
+      .nav {
+        background: rgb(144, 144, 244);
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        padding: 15px 20px;
+      }
+
+      .heading {
+        background: rgb(186, 186, 249);
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        padding: 60px 20px;
+      }
+
+      .contact {
+        display: flex;
+        gap: 10px;
+      }
+
+      .threebox {
+        display: grid;
+        display: flex;
+        justify-content: center;
+      }
+
+      .threebox div {
+        padding: 40px 0;
+        height: 200px;
+      }
+
+      .box1 {
+        background: yellow;
+        width: 200px;
+      }
+      .box2 {
+        background: red;
+        width: 200px;
+      }
+      .box3 {
+        background: rgb(121, 121, 242);
+        width: 200px;
+      }
+      .twobox {
+        display: flex;
+        justify-content: center;
+      }
+
+      .twobox div {
+        padding: 40px 0;
+        height: 200px;
+      }
+
+      .box4 {
+        background: rgb(121, 202, 242);
+        width: 200px;
+      }
+      .box5 {
+        background: rgb(184, 121, 242);
+        width: 200px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="nav">
+        <div>Date</div>
+        <div>Login / Signup</div>
+      </div>
+
+      <div class="heading">
+        <div>Subscribe</div>
+        <div>Awesome Logo</div>
+        <div class="contact">
+          <p>1</p>
+          <p>2</p>
+          <p>3</p>
+        </div>
+      </div>
+
+      <div class="threebox">
+        <div class="box1">1</div>
+        <div class="box2">2</div>
+        <div class="box3">3</div>
+      </div>
+
+      <div class="twobox">
+        <div class="box4">4</div>
+        <div class="box5">5</div>
+      </div>
+    </div>
+  </body>
+</html>

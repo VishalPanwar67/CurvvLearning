@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      .container {
+        width: 90vw;
+        height: 80vh;
+        background-color: white;
+        margin: 50px auto;
+        grid-template-columns: repeat(8, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+        grid-template-areas:
+          "nav nav nav nav nav nav nav nav"
+          "heading heading heading heading heading heading heading heading"
+          "threebox threebox threebox threebox threebox threebox threebox threebox"
+          "twobox twobox twobox twobox twobox twobox twobox twobox";
+      }
+      .nav {
+        background-color: rgb(144, 144, 244);
+        grid-area: nav;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        justify-items: center;
+        align-items: center;
+        height: 10%;
+      }
+      .heading {
+        height: 30%;
+        background-color: rgb(186, 186, 249);
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        align-items: center;
+      }
+      .heading .button {
+        justify-self: end;
+        margin-right: 20%;
+      }
+      
+      .heading .logo {
+        justify-self: center;
+      }
+      .heading .contact {
+        justify-self: start;
+        margin-left: 20%;
+        display: flex;
+        gap: 10px;
+      }
+      .threebox {
+        background-color: white;
+        height: 30%;
+        display: grid;
+        background-color: white;
+        grid-template-columns: repeat(3, 1fr);
+        align-items: center;
+        justify-self: center;
+        width: 50%;
+      }
+      .box1,
+      .box2,
+      .box3,
+      .box4,
+      .box5 {
+        height: 100%;
+        width: 100%;
+      }
+      .threebox .box1 {
+        background-color: yellow;
+      }
+      .threebox .box2 {
+        background-color: red;
+      }
+      .threebox .box3 {
+        background-color: rgb(121, 121, 242);
+      }
+      .twobox {
+        background-color: white;
+        height: 30%;
+        display: grid;
+        background-color: white;
+        grid-template-columns: repeat(2, 1fr);
+        align-items: center;
+        justify-self: center;
+        width: 35%;
+      }
+      .twobox .box4 {
+        background-color: rgb(121, 121, 242);
+      }
+      .twobox .box5 {
+        background-color: rgb(184, 121, 242);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="nav">
+        <div class="date">Date</div>
+        <div class="cardinals">login/signup</div>
+      </div>
+      <div class="heading">
+        <div class="button">Subscribe</div>
+        <div class="logo">Awesome logo</div>
+        <div class="contact">
+          <p>1</p>
+          <p>2</p>
+          <p>3</p>
+        </div>
+      </div>
+      <div class="threebox">
+        <div class="box1">1</div>
+        <div class="box2">2</div>
+        <div class="box3">3</div>
+      </div>
+      <div class="twobox">
+        <div class="box4">4</div>
+        <div class="box5">5</div>
+      </div>
+    </div>
+  </body>
+</html>

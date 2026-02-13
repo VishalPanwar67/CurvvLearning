@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    .container {
+      height: 80vh;
+      width: 90vw;
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      grid-template-rows: repeat(4, 1fr);
+      background-color: rgb(255, 43, 202);
+    }
+    .nav {
+      background: navy;
+      grid-row: 1/2;
+      grid-column: 1/6;
+    }
+    .nav1 {
+      background: rgb(71, 206, 37);
+      grid-row: 2/3;
+      grid-column: 1/6;
+    }
+    .yellow {
+      background: yellow;
+      grid-row: 3/4;
+      grid-column: 2/5;
+    }
+    .red {
+      background: red;
+      grid-row: 4/5;
+      grid-column: 1/6;
+    }
+  </style>
+  <body>
+    <div class="container">
+      <div class="nav"></div>
+      <div class="nav1"></div>
+      <div class="yellow"></div>
+      <div class="red"></div>
+      <div class="purple"></div>
+    </div>
+  </body>
+</html>
