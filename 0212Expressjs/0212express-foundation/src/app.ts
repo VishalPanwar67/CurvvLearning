@@ -1,10 +1,12 @@
 import express from "express";
 import type { Application, Request, Response, NextFunction } from "express";
-import { requestLogger } from "./middlewares/logger.middleware";
-import { authMiddleware } from "./middlewares/auth.middleware";
-import { validateRequest } from "./middlewares/validate.middleware";
-import { notFound } from "./middlewares/notFound";
-import { globalErrorHandler } from "./middlewares/error.middleware";
+import { requestLogger } from "./middlewares/logger.middleware.js";
+import { authMiddleware } from "./middlewares/auth.middleware.js";
+import { validateRequest } from "./middlewares/validate.middleware.js";
+import { notFound } from "./middlewares/notFound.js";
+import { globalErrorHandler } from "./middlewares/error.middleware.js";
+
+import taskRoutes from "./routes/task.routes.js";
 
 const app: Application = express();
 
@@ -15,6 +17,8 @@ app.use(express.urlencoded({ extended: true }));
 app.get("/", (req: Request, res: Response) => {
   res.json({ success: true, message: "Welcome to the API" });
 });
+
+app.use("/api/tasks", taskRoutes);
 
 app.post(
   "/api/data",
