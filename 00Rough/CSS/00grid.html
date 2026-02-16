@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        border: 0;
+        box-sizing: border-box;
+      }
+
+      .container {
+        width: 100vw;
+        height: 100vh;
+        display: grid;
+        grid-template-areas:
+          "nav nav nav" "pink1 yellow yellow" "lgreen yellow yellow"
+          "lgreen gray gray" "green green pink2" "orange orange orange";
+        gap: 5px;
+      }
+      .nav {
+        background-color: rgba(97, 97, 255, 0.534);
+        grid-area: nav;
+      }
+      .pink1 {
+        background-color: pink;
+        grid-area: pink1;
+      }
+      .yellow {
+        background-color: yellow;
+        grid-area: yellow;
+      }
+      .lgreen {
+        background-color: lightgreen;
+        grid-area: lgreen;
+      }
+      .gray {
+        background-color: gray;
+        grid-area: gray;
+      }
+      .green {
+        background-color: green;
+        grid-area: green;
+      }
+      .pink2 {
+        background-color: pink;
+        grid-area: pink2;
+      }
+      .orange {
+        background-color: orange;
+        grid-area: orange;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="nav"></div>
+      <div class="pink1"></div>
+      <div class="yellow"></div>
+      <div class="lgreen"></div>
+      <div class="gray"></div>
+      <div class="green"></div>
+      <div class="pink2"></div>
+      <div class="orange"></div>
+    </div>
+  </body>
+</html>
