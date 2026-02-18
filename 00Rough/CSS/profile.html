@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .container {
+        width: 500px;
+        height: 500px;
+        background-color: aqua;
+        border-radius: 50%;
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        overflow: hidden;
+      }
+      .container > div {
+        display: flex;
+        justify-content: center;
+      }
+      .circle {
+        background-color: blue;
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        align-self: end;
+      }
+      .lower {
+        background-color: blue;
+        width: 300px;
+        height: 200px;
+        border-radius: 100px 100px 0 0;
+        align-self: end;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div>
+        <div class="circle"></div>
+      </div>
+      <div>
+        <div class="lower"></div>
+      </div>
+    </div>
+  </body>
+</html>

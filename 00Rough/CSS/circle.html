@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      .container {
+        width: 100vw;
+        height: 100vh;
+        background-color: purple;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        /* border: 2px solid red; */
+      }
+      .container > div {
+        background-color: burlywood;
+        position: relative;
+        display: flex;
+        justify-content: center;
+      }
+      .top,
+      .bottom {
+        height: 100px;
+        width: 150px;
+      }
+      .mid {
+        height: 300px;
+        width: 300px;
+        border-radius: 100%;
+      }
+      .cirBox {
+        display: flex;
+      }
+      .cir {
+        background-color: burlywood;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+      }
+      .top > .cirBox {
+        position: absolute;
+        bottom: -25px;
+      }
+      .bottom > .cirBox {
+        position: absolute;
+        top: -25px;
+      }
+      .mid > .cirBox {
+        position: absolute;
+        bottom: -20px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="top">
+        <div class="cirBox">
+          <div class="cir"></div>
+          <div class="cir"></div>
+          <div class="cir"></div>
+        </div>
+      </div>
+      <div class="mid">
+        <div class="cirBox">
+          <div class="cir"></div>
+          <div class="cir"></div>
+          <div class="cir"></div>
+        </div>
+      </div>
+      <div class="bottom">
+        <div class="cirBox">
+          <div class="cir"></div>
+          <div class="cir"></div>
+          <div class="cir"></div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
