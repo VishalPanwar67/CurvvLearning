@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100vw;
+        height: 100vh;
+        background-color: rgb(63, 63, 186);
+      }
+      .container {
+        width: 400px;
+        height: 400px;
+        border-radius: 100%;
+        background-color: rgb(63, 63, 186);
+        border: 10px solid white;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .hour,
+      .min,
+      .sec {
+        border: 2px solid black;
+        height: 1px;
+        position: absolute;
+        top: 180px;
+        left: 180px;
+        width: 150px;
+      }
+      .hour {
+        /* width: 100px; */
+        transform-origin: top left;
+        transform: rotate(60deg);
+      }
+      .min {
+        transform-origin: top left;
+        transform: rotate(230deg);
+      }
+      .sec {
+        transform-origin: top left;
+        transform: rotate(330deg);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="hour"></div>
+      <div class="min"></div>
+      <div class="sec"></div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: rgb(234, 209, 172);
+      }
+      .container {
+        width: 500px;
+        /* border: 1px solid red; */
+        display: flex;
+        flex-direction: column;
+      }
+      .top,
+      .bottom {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+      }
+      .leaves {
+        width: 100px;
+        height: 100px;
+        background-color: green;
+        border-radius: 0px 100% 0px 100%;
+        transition: all;
+      }
+      .mid {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+      }
+      .box {
+        background-color: green;
+        width: 60%;
+        height: 120px;
+      }
+      .row {
+        rotate: 90deg;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="top">
+        <div class="leaves"></div>
+        <div class="leaves row"></div>
+      </div>
+      <div class="mid">
+        <div class="box"></div>
+      </div>
+      <div class="bottom">
+        <div class="leaves row"></div>
+        <div class="leaves"></div>
+      </div>
+    </div>
+  </body>
+</html>
